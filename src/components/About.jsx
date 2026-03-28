@@ -8,23 +8,23 @@ const About = () => {
             className="w-full py-16 relative z-10"
         >
             <div className="max-w-[1200px] mx-auto px-6 md:px-[8vw]">
-                {/* Section Heading */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8 }}
-                    className="mb-10 md:mb-16"
-                >
-                    <h2 className="text-sm font-bold tracking-[0.3em] text-amber-500 mb-4 uppercase">Discover</h2>
-                    <h3 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight leading-none mix-blend-difference pb-2">
-                        ABOUT <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-zinc-400">ME</span>
-                    </h3>
-                </motion.div>
-
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-start">
                     {/* Left Column - Big Text */}
                     <div className="lg:col-span-7">
+                        {/* Section Heading */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ duration: 0.8 }}
+                            className="mb-10 md:mb-12"
+                        >
+                            <h2 className="text-sm font-bold tracking-[0.3em] text-amber-500 mb-4 uppercase">Discover</h2>
+                            <h3 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight leading-none mix-blend-difference pb-2">
+                                ABOUT <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-zinc-400">ME</span>
+                            </h3>
+                        </motion.div>
+
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
