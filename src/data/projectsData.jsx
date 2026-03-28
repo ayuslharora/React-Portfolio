@@ -8,6 +8,7 @@ export const projects = [
         fullDescription: "Flavor Forge is a comprehensive culinary web application that integrates highly dynamic routing and public recipe APIs. It features multi-faceted search (by ingredient, category, or region), a random meal generator, and a local-storage based Favorites system, seamlessly wrapped in a beautiful Tailwind interface.",
         image: import.meta.env.BASE_URL + 'project-flavor-forge.png',
         liveLink: "https://flavor-forge-sigma.vercel.app/",
+        githubLink: "https://github.com/ayuslharora/Flavor-Forge",
         techStack: ["React", "Tailwind CSS", "Axios", "Vite"]
     },
     {
@@ -44,6 +45,7 @@ export const projects = [
         fullDescription: "An interactive, arcade-style browser game developed entirely with vanilla web technologies during a weekend hackathon. It features custom logic constraints, engaging visual aesthetics, and collision detection to keep players coming back.",
         image: import.meta.env.BASE_URL + 'project-hackathon-game.jpg',
         liveLink: "https://ayuslharora.github.io/Daydream_Hackathon-Debt_of_Seconds1/",
+        githubLink: "https://github.com/ayuslharora/Daydream_Hackathon-Debt_of_Seconds1",
         techStack: ["HTML5", "Vanilla JS", "CSS3"]
     },
     {

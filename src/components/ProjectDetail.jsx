@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import { projects } from '../data/projectsData';
 import Footer from './Footer';
 
@@ -96,22 +96,37 @@ const ProjectDetail = () => {
                                 </div>
                             </div>
                             
-                            {project.liveLink && (
+                            {(project.liveLink || project.githubLink) && (
                                 <>
                                     <hr className="border-black/5" />
 
                                     <div>
-                                        <h3 className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-3">Live Access</h3>
-                                        <a 
-                                            href={project.liveLink}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="group relative flex items-center justify-center gap-3 w-full px-6 py-4 bg-black text-white rounded-xl font-bold overflow-hidden transition-transform hover:scale-[1.02] active:scale-95 shadow-xl"
-                                        >
-                                            <span className="relative z-10">Live Preview</span>
-                                            <ExternalLink className="w-4 h-4 relative z-10" />
-                                            <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-300 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
-                                        </a>
+                                        <h3 className="text-xs uppercase tracking-widest text-zinc-400 font-bold mb-3">Links</h3>
+                                        <div className="flex flex-col gap-3">
+                                            {project.liveLink && (
+                                                <a 
+                                                    href={project.liveLink}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    className="group relative flex items-center justify-center gap-3 w-full px-6 py-4 bg-black text-white rounded-xl font-bold overflow-hidden transition-transform hover:scale-[1.02] active:scale-95 shadow-xl"
+                                                >
+                                                    <span className="relative z-10">Live Preview</span>
+                                                    <ExternalLink className="w-4 h-4 relative z-10" />
+                                                    <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-300 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
+                                                </a>
+                                            )}
+                                            {project.githubLink && (
+                                                <a 
+                                                    href={project.githubLink}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    className="group relative flex items-center justify-center gap-3 w-full px-6 py-4 bg-white border border-black/10 text-black hover:bg-black/5 rounded-xl font-bold transition-all hover:scale-[1.02] active:scale-95 shadow-sm"
+                                                >
+                                                    <span className="relative z-10">View Source File</span>
+                                                    <Github className="w-4 h-4 relative z-10" />
+                                                </a>
+                                            )}
+                                        </div>
                                     </div>
                                 </>
                             )}
