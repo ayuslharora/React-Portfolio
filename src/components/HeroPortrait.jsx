@@ -10,7 +10,7 @@ const HeroPortrait = () => {
                 style={{ width: "clamp(180px, 28vw, 320px)" }}
             >
                 <img
-                    src="/portrait.png"
+                    src={`${import.meta.env.BASE_URL}portrait.png`}
                     className="block w-full h-auto rounded-[25%] animate-[hover_2s_ease-in-out_infinite] relative z-[1]"
                     alt="Portrait of Ayush Arora"
                 />

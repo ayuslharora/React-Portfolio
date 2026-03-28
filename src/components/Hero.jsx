@@ -121,7 +121,7 @@ const Hero = () => {
                                 rel="noreferrer"
                                 className="group relative w-11 h-11 rounded-full border border-black/10 flex items-center justify-center hover:border-black/30 hover:bg-black/5 transition-all duration-300"
                             >
-                                <img src="/Leetcode-svg.png" alt="LeetCode" className="w-6 h-6 object-contain grayscale opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
+                                <img src={`${import.meta.env.BASE_URL}Leetcode-svg.png`} alt="LeetCode" className="w-6 h-6 object-contain grayscale opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
                                 <span className="absolute -top-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white text-xs font-medium px-2.5 py-1.5 rounded-md pointer-events-none whitespace-nowrap shadow-lg">
                                     LeetCode Stats
                                 </span>

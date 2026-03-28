@@ -43,7 +43,7 @@ const NavBar = () => {
 
                     <div className="flex items-center">
                         <a href="/#HOME" className="cursor-pointer group relative flex items-center justify-center w-10 h-10 transition-transform hover:scale-105">
-                            <img src="/logo.png" alt="Logo" className="w-full h-full object-contain drop-shadow-sm" style={{ filter: 'invert(1)' }} />
+                            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-contain drop-shadow-sm" style={{ filter: 'invert(1)' }} />
                         </a>
                     </div>
 
@@ -91,7 +91,7 @@ const NavBar = () => {
                         className="fixed inset-0 z-120 flex flex-col bg-zinc-950/95 backdrop-blur-3xl"
                     >
                         <div className="flex items-center justify-between px-6 py-8">
-                            <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain" />
+                            <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-10 h-10 object-contain" />
                             <button
                                 onClick={() => setIsMenuOpen(false)}
                                 className="w-12 h-12 flex items-center justify-center text-zinc-400 hover:text-white transition-colors text-4xl leading-none font-light"
