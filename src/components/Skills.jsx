@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const skills = [
-    { name: 'React', logo: '/skill-react.svg', level: 4, category: 'Frontend' },
-    { name: 'JavaScript', logo: '/skill-javascript.png', level: 4, category: 'Frontend' },
-    { name: 'Python', logo: '/skill-python.png', level: 5, category: 'Backend' },
-    { name: 'Java', logo: '/skill-java.webp', level: 3, category: 'Backend' },
-    { name: 'Node.js', logo: '/skill-nodejs.png', level: 3, category: 'Backend' },
-    { name: 'GitHub', logo: '/skill-github.svg', level: 4, category: 'Tools' },
+    { name: 'React', logo: import.meta.env.BASE_URL + 'skill-react.svg', level: 4, category: 'Frontend' },
+    { name: 'JavaScript', logo: import.meta.env.BASE_URL + 'skill-javascript.png', level: 4, category: 'Frontend' },
+    { name: 'Python', logo: import.meta.env.BASE_URL + 'skill-python.png', level: 5, category: 'Backend' },
+    { name: 'Java', logo: import.meta.env.BASE_URL + 'skill-java.webp', level: 3, category: 'Backend' },
+    { name: 'Node.js', logo: import.meta.env.BASE_URL + 'skill-nodejs.png', level: 3, category: 'Backend' },
+    { name: 'GitHub', logo: import.meta.env.BASE_URL + 'skill-github.svg', level: 4, category: 'Tools' },
 ];
 
 const categoryColor = {
