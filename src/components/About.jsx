@@ -70,7 +70,7 @@ const About = () => {
 
                         <div className="relative overflow-hidden rounded-2xl bg-zinc-100 border border-black/10 shadow-xl" style={{ aspectRatio: '4/5' }}>
                             <motion.img
-                                src="/profile.jpg"
+                                src={`${import.meta.env.BASE_URL}profile.jpg`}
                                 alt="Profile"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                                 initial={{ opacity: 0.85, scale: 1 }}

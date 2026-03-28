@@ -5,7 +5,7 @@ const achievements = [
     {
         id: 1,
         summary: 'International Rank 1 — IOM (Mathematics Olympiad)',
-        image: '/iom-rank1.jpg',
+        image: import.meta.env.BASE_URL + 'iom-rank1.jpg',
         imageAlt: 'IOM International Rank 1 certificate',
         body: (
             <>
@@ -34,7 +34,7 @@ const achievements = [
     {
         id: 2,
         summary: 'House Captain — School Leadership',
-        image: '/house-captain.jpg',
+        image: import.meta.env.BASE_URL + 'house-captain.jpg',
         imageAlt: 'House Captain certificate',
         body: (
             <>

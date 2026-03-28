@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const SECTIONS = [
-    { id: 'HOME', href: '/#HOME', label: 'Home', num: '01' },
-    { id: 'About', href: '/#About', label: 'About', num: '02' },
-    { id: 'Academics', href: '/#Academics', label: 'Academics', num: '03' },
-    { id: 'Projects', href: '/#Projects', label: 'Works', num: '04' },
-    { id: 'contact', href: '/#contact', label: 'Contact', num: '05' },
+    { id: 'HOME', href: '#HOME', label: 'Home', num: '01' },
+    { id: 'About', href: '#About', label: 'About', num: '02' },
+    { id: 'Academics', href: '#Academics', label: 'Academics', num: '03' },
+    { id: 'Projects', href: '#Projects', label: 'Works', num: '04' },
+    { id: 'contact', href: '#contact', label: 'Contact', num: '05' },
 ];
 
 const NavBar = () => {
@@ -42,7 +42,7 @@ const NavBar = () => {
                 <div className="flex items-center justify-between w-full max-w-5xl rounded-full bg-white/60 backdrop-blur-md border border-black/5 px-6 py-3 shadow-lg pointer-events-auto">
 
                     <div className="flex items-center">
-                        <a href="/#HOME" className="cursor-pointer group relative flex items-center justify-center w-10 h-10 transition-transform hover:scale-105">
+                        <a href="#HOME" className="cursor-pointer group relative flex items-center justify-center w-10 h-10 transition-transform hover:scale-105">
                             <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-contain drop-shadow-sm" style={{ filter: 'invert(1)' }} />
                         </a>
                     </div>
