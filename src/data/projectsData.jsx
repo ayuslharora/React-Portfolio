@@ -34,7 +34,7 @@ export const projects = [
         description: <>A fun <span className="text-amber-600 font-semibold">browser game</span> created with HTML, CSS, and JavaScript.</>,
         fullDescription: "An interactive, arcade-style browser game developed entirely with vanilla web technologies during a weekend hackathon. It features custom logic constraints, engaging visual aesthetics, and collision detection to keep players coming back.",
         image: import.meta.env.BASE_URL + 'project-hackathon-game.jpg',
-        liveLink: "", // Add live demo link here in the future
+        liveLink: "https://ayuslharora.github.io/Daydream_Hackathon-Debt_of_Seconds1/",
         techStack: ["HTML5", "Vanilla JS", "CSS3"]
     },
     {
