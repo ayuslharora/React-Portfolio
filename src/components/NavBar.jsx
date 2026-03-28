@@ -42,7 +42,7 @@ const NavBar = () => {
                 <div className="flex items-center justify-between w-full max-w-5xl rounded-full bg-white/60 backdrop-blur-md border border-black/5 px-6 py-3 shadow-lg pointer-events-auto">
 
                     <div className="flex items-center">
-                        <a href="#HOME" className="cursor-pointer group relative flex items-center justify-center w-10 h-10 transition-transform hover:scale-105">
+                        <a href={import.meta.env.BASE_URL} className="cursor-pointer group relative flex items-center justify-center w-10 h-10 transition-transform hover:scale-105">
                             <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-contain drop-shadow-sm" style={{ filter: 'invert(1)' }} />
                         </a>
                     </div>
@@ -63,7 +63,7 @@ const NavBar = () => {
                         {SECTIONS.map((sec) => (
                             <a
                                 key={sec.id}
-                                href={sec.href}
+                                href={`${import.meta.env.BASE_URL}${sec.href}`}
                                 className={`relative px-5 py-2 rounded-full text-sm font-medium transition-colors ${activeId === sec.id ? 'text-black' : 'text-zinc-500 hover:text-black'}`}
                             >
                                 {activeId === sec.id && (
@@ -117,7 +117,7 @@ const NavBar = () => {
                                 {SECTIONS.map((sec, i) => (
                                     <motion.a
                                         key={sec.id}
-                                        href={sec.href}
+                                        href={`${import.meta.env.BASE_URL}${sec.href}`}
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: i * 0.1 + 0.1 }}
