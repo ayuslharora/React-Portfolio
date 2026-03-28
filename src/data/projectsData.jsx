@@ -2,6 +2,15 @@ import React from 'react';
 
 export const projects = [
     {
+        id: 6,
+        title: 'Flavor Forge',
+        description: <>A modern <span className="text-amber-600 font-semibold">recipe finder app</span> built with React and Tailwind CSS.</>,
+        fullDescription: "Flavor Forge is a comprehensive culinary web application that integrates highly dynamic routing and public recipe APIs. It features multi-faceted search (by ingredient, category, or region), a random meal generator, and a local-storage based Favorites system, seamlessly wrapped in a beautiful Tailwind interface.",
+        image: import.meta.env.BASE_URL + 'project-flavor-forge.png',
+        liveLink: "https://flavor-forge-sigma.vercel.app/",
+        techStack: ["React", "Tailwind CSS", "Axios", "Vite"]
+    },
+    {
         id: 1,
         title: 'AI Powered GAME Controller',
         description: <>First AI/ML Project using <span className="text-amber-600 font-semibold">Python + CV and pyautogui</span> to control game.</>,
