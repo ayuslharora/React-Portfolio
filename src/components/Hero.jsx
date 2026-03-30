@@ -93,7 +93,7 @@ const Hero = () => {
 
                         <div className="flex gap-4">
                             <a
-                                href="https://www.linkedin.com/in/ayush-arora-678758376/"
+                                href="https://www.linkedin.com/in/ayuslh/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="group relative w-11 h-11 rounded-full border border-black/10 flex items-center justify-center text-zinc-600 hover:text-black hover:border-black/30 hover:bg-black/5 transition-all duration-300"

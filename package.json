@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ayuslharora.github.io/React-Portfolio/",
+  "homepage": "https://ayuslh.in",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build && cp dist/index.html dist/404.html",

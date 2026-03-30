@@ -14,7 +14,7 @@ const Footer = () => {
                         <span className="font-medium tracking-wide text-zinc-600">Made with ❤️ by Ayush Arora</span>
                         <span className="w-1.5 h-1.5 rounded-full bg-zinc-400" />
                         <a 
-                            href="https://www.linkedin.com/in/ayush-arora-678758376/" 
+                            href="https://www.linkedin.com/in/ayuslh/" 
                             target="_blank" 
                             rel="noreferrer" 
                             aria-label="LinkedIn"

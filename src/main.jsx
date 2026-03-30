@@ -25,7 +25,7 @@ const RootLayout = () => {
 };
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/React-Portfolio">
+  <BrowserRouter>
     <RootLayout />
   </BrowserRouter>
 )

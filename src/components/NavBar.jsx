@@ -136,7 +136,7 @@ const NavBar = () => {
                                 transition={{ delay: 0.6 }}
                                 className="absolute bottom-12 flex items-center justify-center gap-6 z-10 text-zinc-500 text-sm font-medium"
                             >
-                                <a href="https://www.linkedin.com/in/ayush-arora-678758376/" className="hover:text-zinc-300">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/ayuslh/" className="hover:text-zinc-300">LinkedIn</a>
                                 <a href="https://github.com/ayuslharora" className="hover:text-zinc-300">GitHub</a>
                             </motion.div>
                         </div>
