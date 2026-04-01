@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import { useState } from 'react'
 import './index.css'
 import App from './App.jsx'
@@ -13,14 +14,14 @@ const RootLayout = () => {
   );
 
   return (
-    <>
+    <HelmetProvider>
       {!isTouchDevice && <CustomCursor />}
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/form" element={<ContactForm />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
       </Routes>
-    </>
+    </HelmetProvider>
   );
 };
 

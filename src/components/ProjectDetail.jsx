@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
@@ -25,6 +26,13 @@ const ProjectDetail = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50 relative overflow-hidden selection:bg-amber-400/30">
+            <Helmet>
+                <title>{`${project.title} - Ayush Arora | AI Engineer & Full Stack Developer`}</title>
+                <meta name="description" content={project.fullDescription ? project.fullDescription.substring(0, 160) : `Detailed view of ${project.title}`} />
+                <meta property="og:title" content={`${project.title} - Ayush Arora Projects`} />
+                <meta property="og:description" content={project.fullDescription ? project.fullDescription.substring(0, 160) : `Detailed view of ${project.title}`} />
+            </Helmet>
+            
             {/* Background elements */}
             <div className="fixed inset-0 pointer-events-none">
                 <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-amber-500/10 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2" />

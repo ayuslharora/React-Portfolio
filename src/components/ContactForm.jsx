@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { Send } from 'lucide-react';
 import NavBar from './NavBar';
@@ -38,6 +39,11 @@ const ContactForm = () => {
 
     return (
         <div className="min-h-screen flex flex-col bg-slate-50 relative overflow-hidden selection:bg-amber-400/30">
+            <Helmet>
+                <title>Contact Ayush Arora | AI Engineer & Full Stack Developer</title>
+                <meta name="description" content="Get in touch with Ayush Arora. Fancy saying hi or want to get started with your next project? Feel free to contact me." />
+            </Helmet>
+
             {/* Background elements */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-amber-500/10 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2" />

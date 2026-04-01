@@ -58,12 +58,12 @@ const Skills = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8 }}
-                className="mb-10 md:mb-16 text-center md:text-left"
+                className="mb-10 md:mb-16"
             >
                 <h2 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight text-black mb-3">
                     TECHNICAL <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-300">EXPERTISE</span>
                 </h2>
-                <p className="text-zinc-600 max-w-xl mx-auto md:mx-0">Tools and technologies I use to build scalable intelligent systems.</p>
+                <p className="text-zinc-600 max-w-xl">Tools and technologies I use to build scalable intelligent systems.</p>
             </motion.div>
 
             <motion.div

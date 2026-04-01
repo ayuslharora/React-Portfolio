@@ -18,7 +18,7 @@ const Projects = () => {
             id="Projects"
             className="w-full py-16 relative z-10"
         >
-            <div className="max-w-[1400px] mx-auto px-6 md:px-[6vw]">
+            <div className="max-w-[1200px] mx-auto px-6 md:px-[8vw]">
                 <motion.div 
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -26,10 +26,10 @@ const Projects = () => {
                     transition={{ duration: 0.8 }}
                     className="mb-10 md:mb-16"
                 >
-                    <h2 className="text-sm font-bold tracking-[0.3em] text-amber-500 mb-4 uppercase">Selected Work</h2>
-                    <h3 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight leading-none text-black pb-2">
-                        FEATURED <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-zinc-400">PROJECTS</span>
-                    </h3>
+                    <p className="text-sm font-bold tracking-[0.3em] text-amber-500 mb-4 uppercase">Selected Work</p>
+                    <h2 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight leading-none text-black pb-2">
+                        FEATURED <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-300">PROJECTS</span>
+                    </h2>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

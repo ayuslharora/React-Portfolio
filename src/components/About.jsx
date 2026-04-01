@@ -19,10 +19,10 @@ const About = () => {
                             transition={{ duration: 0.8 }}
                             className="mb-10 md:mb-12"
                         >
-                            <h2 className="text-sm font-bold tracking-[0.3em] text-amber-500 mb-4 uppercase">Discover</h2>
-                            <h3 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight leading-none mix-blend-difference pb-2">
+                            <p className="text-sm font-bold tracking-[0.3em] text-amber-500 mb-4 uppercase">Discover</p>
+                            <h2 className="text-[clamp(2rem,4.5vw,4rem)] font-black tracking-tight leading-none mix-blend-difference pb-2">
                                 ABOUT <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-zinc-400">ME</span>
-                            </h3>
+                            </h2>
                         </motion.div>
 
                         <motion.p
@@ -71,7 +71,7 @@ const About = () => {
                         <div className="relative overflow-hidden rounded-2xl bg-zinc-100 border border-black/10 shadow-xl" style={{ aspectRatio: '4/5' }}>
                             <motion.img
                                 src={`${import.meta.env.BASE_URL}IMG_20260330_170438.jpg`}
-                                alt="Profile"
+                                alt="Ayush Arora, AI Engineer and first-year student at BITS Pilani"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }}
                                 initial={{ opacity: 0.85, scale: 1 }}
                                 whileHover={{ scale: 1.05, opacity: 1 }}

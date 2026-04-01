@@ -91,7 +91,7 @@ const Academics = () => {
             id="Academics"
             className="w-full py-24 relative z-10 bg-transparent"
         >
-            <div className="max-w-[1000px] mx-auto px-6 md:px-[8vw]">
+            <div className="max-w-[1200px] mx-auto px-6 md:px-[8vw]">
                 <div className="mb-16">
                     <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-black tracking-tight text-black mb-4">
                         ACADEMIC <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">EXCELLENCE</span>
