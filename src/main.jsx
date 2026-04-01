@@ -7,6 +7,7 @@ import App from './App.jsx'
 import ContactForm from './components/ContactForm.jsx'
 import CustomCursor from './components/CustomCursor.jsx'
 import ProjectDetail from './components/ProjectDetail.jsx'
+import NotFound from './components/NotFound.jsx'
 
 const RootLayout = () => {
   const [isTouchDevice] = useState(
@@ -20,6 +21,7 @@ const RootLayout = () => {
         <Route path="/" element={<App />} />
         <Route path="/form" element={<ContactForm />} />
         <Route path="/project/:id" element={<ProjectDetail />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </HelmetProvider>
   );

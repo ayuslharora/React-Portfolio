@@ -45,7 +45,7 @@ const ProjectDetail = () => {
                     onClick={() => navigate('/')} 
                     className="group flex items-center gap-2 text-zinc-500 hover:text-black transition-colors font-medium text-sm tracking-wide"
                 >
-                    <ArrowLeft className="w-4 h-4 transform group-hover:-translate-x-1 transition-transform" />
+                    <ArrowLeft className="w-4 h-4 text-amber-500 transform group-hover:-translate-x-1 transition-transform" />
                     Back to Portfolio
                 </button>
             </header>
@@ -118,8 +118,8 @@ const ProjectDetail = () => {
                                                     rel="noreferrer"
                                                     className="group relative flex items-center justify-center gap-3 w-full px-6 py-4 bg-black text-white rounded-xl font-bold overflow-hidden transition-transform hover:scale-[1.02] active:scale-95 shadow-xl"
                                                 >
-                                                    <span className="relative z-10">Live Preview</span>
-                                                    <ExternalLink className="w-4 h-4 relative z-10" />
+                                                    <span className="relative z-10 group-hover:text-black transition-colors">Live Preview</span>
+                                                    <ExternalLink className="w-4 h-4 relative z-10 text-amber-500 group-hover:text-black transition-colors" />
                                                     <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-300 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
                                                 </a>
                                             )}

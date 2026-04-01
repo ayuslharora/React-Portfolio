@@ -32,13 +32,13 @@ const Hero = () => {
     return (
         <section
             id="HOME"
-            className="w-full min-h-screen relative flex flex-col justify-center overflow-hidden px-6 md:px-[6vw] z-10 pt-16 md:pt-32"
+            className="w-full min-h-screen relative flex flex-col justify-center overflow-hidden z-10 pt-16 md:pt-32"
         >
             <motion.div
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center"
+                className="w-full max-w-[1200px] mx-auto px-6 md:px-[8vw] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center"
             >
                 {/* Text Content (Col 1-7) */}
                 <div className="lg:col-span-7 flex flex-col items-start pt-[6vh] lg:pt-0 order-2 lg:order-1">
@@ -85,7 +85,7 @@ const Hero = () => {
                         >
                             <span className="relative z-10">See my work</span>
                             <div className="relative z-10 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                                <ArrowUpRight className="w-4 h-4" />
+                                <ArrowUpRight className="w-4 h-4 text-amber-500" />
                             </div>
                             {/* Hover sweep effect */}
                             <div className="absolute inset-0 bg-linear-to-r from-amber-400 to-amber-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />

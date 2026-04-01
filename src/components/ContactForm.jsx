@@ -131,8 +131,8 @@ const ContactForm = () => {
                                     disabled={isSubmitting}
                                     className="group relative flex items-center justify-center gap-3 w-full md:w-auto self-start mt-4 px-8 py-4 bg-black text-white rounded-full font-bold overflow-hidden transition-transform hover:scale-105 active:scale-95 disabled:opacity-70 disabled:pointer-events-none"
                                 >
-                                    <span className="relative z-10">{isSubmitting ? "Sending..." : "Send Message"}</span>
-                                    <Send className="w-4 h-4 relative z-10" />
+                                    <span className="relative z-10 group-hover:text-black transition-colors">{isSubmitting ? "Sending..." : "Send Message"}</span>
+                                    <Send className="w-4 h-4 relative z-10 text-amber-500 group-hover:text-black transition-colors" />
                                     {/* Hover sweep effect */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
                                 </button>

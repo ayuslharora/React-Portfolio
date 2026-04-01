@@ -43,8 +43,8 @@ const Contact = () => {
                         className="group relative flex items-center justify-center gap-4 px-10 py-5 bg-black text-white rounded-full font-bold text-lg md:text-xl overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(0,0,0,0.1)]"
                     >
                         <span className="relative z-10">Get in touch</span>
-                        <div className="relative z-10 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                            <ArrowUpRight className="w-5 h-5" />
+                        <div className="relative z-10 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-amber-400/20 transition-colors">
+                            <ArrowUpRight className="w-5 h-5 text-amber-500" />
                         </div>
                         {/* Hover sweep effect */}
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-200 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out z-0" />
